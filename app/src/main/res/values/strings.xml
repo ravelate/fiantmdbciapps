@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fian Movie</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="title_activity_detail_home">DetailHomeActivity</string>
+    <string name="no_data">Empty data</string>
+    <string name="something_wrong">Oops.. something went wrong</string>
+    <string name="text_release">Release Date: %1\$s</string>
+    <string name="text_rating">%1\$s / 10</string>
+    <string name="comment">Comment:</string>
+</resources>

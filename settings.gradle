@@ -1,0 +1,3 @@
+include ':core'
+rootProject.name='Fian TMDB App'
+include ':app'
