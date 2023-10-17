@@ -1,3 +1,4 @@
+[![ravelate](https://circleci.com/ravelate/fiantmdbciapps.svg?style=svg)](https://circleci.com/gh/ravelate/fiantmdbciapps)
 1. Buka Project di android studio
 2. Gunakan JDK Versi 15 dan atur di pengaturan android studio
 3. run project dan aplikasi akan dibuild (pilih device yang mau digunakan)
