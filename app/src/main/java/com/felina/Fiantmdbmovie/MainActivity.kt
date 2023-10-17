@@ -1,7 +1,6 @@
 package com.felina.Fiantmdbmovie
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -9,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.felina.Fiantmdbmovie.databinding.ActivityMainBinding
-import com.felina.Fiantmdbmovie.favorite.FavoriteFragment
 import com.felina.Fiantmdbmovie.home.HomeFragment
 import com.google.android.material.navigation.NavigationView
 
@@ -53,7 +51,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 title = getString(R.string.app_name)
             }
             R.id.nav_favorite -> {
-                fragment = FavoriteFragment()
+                startActivity(Intent(this, Class.forName("com.felina.Fiantmdbmovie.favorite.FavoriteActivity")))
                 title = getString(R.string.menu_favorite)
             }
         }

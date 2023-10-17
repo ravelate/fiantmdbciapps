@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
-    id 'kotlin-android-extensions'
+    id 'kotlin-parcelize'
     id 'kotlin-kapt'
 }
 apply from: '../shared_dependencies.gradle'
@@ -41,8 +41,9 @@ dependencies {
 
     implementation "androidx.room:room-runtime:$room_version"
     androidTestImplementation project(path: ':app')
+    androidTestImplementation project(path: ':favorite')
     kapt "androidx.room:room-compiler:$room_version"
-    androidTestImplementation "androidx.room:room-testing:$room_version"
+            androidTestImplementation "androidx.room:room-testing:$room_version"
 
 
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"

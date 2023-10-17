@@ -37,7 +37,7 @@ class MovieRepository(
             override suspend fun saveCallResult(data: List<MovieResponse>) {
                 val tourismList = DataMapper.mapResponsesToEntities(data)
                 localDataSource.insertMovie(tourismList)
-            }
+                    }
         }.asFlow()
 
     override fun getFavoriteMovie(): Flow<List<Movie>> {
